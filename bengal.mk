@@ -37,6 +37,19 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+
+# We will use Angle Driver.
+USE_ANGLE ?= true
+
+PRODUCT_PACKAGES += \
+	libEGL_angle \
+	libGLESv1_CM_angle \
+	libGLESv2_angle
+
+PRODUCT_VENDOR_PROPERTIES += \
+	ro.hardware.egl = angle \
+	ro.hardware.egl_legacy = adreno
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
