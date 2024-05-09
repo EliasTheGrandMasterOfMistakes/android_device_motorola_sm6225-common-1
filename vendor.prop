@@ -241,3 +241,7 @@ ro.vendor.zram.swapon=true
 
 # Zygote
 zygote.critical_window.minute=10
+
+
+# Turnip non conformant
+mesa.tu.debug=noconform
