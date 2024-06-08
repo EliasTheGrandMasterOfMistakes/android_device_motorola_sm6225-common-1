@@ -57,7 +57,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Configure hwui renderer and renderengine backend
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.hwui.use_vulkan=true \
-    debug.renderengine.backend=skiaglthreaded
+    debug.renderengine.backend=skiavkthreaded
 
 # A/B
 # AAPT
